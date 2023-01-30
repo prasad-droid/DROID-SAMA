@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.gold {
+  color: gold;
+}
+
+.bg-gold {
+  background: gold;
+}
+
+.no-outline {
+  outline: none;
+  border: none;
+}
+
+.gold-border {
+  border: 2px solid gold;
+}
+
+.gold-border-right {
+  border-right: 2px solid gold;
+}
+
+.border-bottom-gold {
+  border-bottom: 2px solid gold;
+}
+
+.w-150 {
+  width: 165px;
+}
+
+.h-500 {
+  height: 500px;
+}
+
+.f-0-8rem {
+  font-size: 0.8rem;
+}
+
+.card {
+  transition: 0.3s;
+  margin: 5px;
+}
+
+.badge {
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card:hover,
+.badge:hover {
+  scale: 1.1;
+}
+
+.card a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.card:hover {
+  z-index: 2;
+}
+
+.img-fit {
+  height: 250px;
+  object-fit: cover;
+}
+
+.j-start {
+  justify-content: flex-start;
+}
+
+.prev ,.next{
+  cursor: pointer;
+}
+
+.pageNo{
+  cursor: default;
+}
+.player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.player video {
+  height: 80vh;
+}
+
+.error-page {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.error-page h1 {
+  font-size: 10rem;
+  margin-bottom: 0;
+}
+
+.error-page h2 {
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+
+@media screen and (max-width: 400px) {
+  .card {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    width: 30%;
+  }
+}
