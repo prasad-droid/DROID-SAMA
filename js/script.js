@@ -179,7 +179,7 @@ function createCard(ele) {
   <h4 class="card-title f-0-8rem">${ele.animeTitle}</h4>
   <p class="card-text">Eps. ${ele.episodeNum}</p>
   
-  <a href="${ele.episodeUrl}">
+  <a href="${ele.animeUrl}">
   </div>`)
     : ele.hasOwnProperty("releasedDate")
     ? //----------------------------------------Movies & Popular Page--------------------------------
@@ -188,7 +188,7 @@ function createCard(ele) {
     <h4 class="card-title f-0-8rem">${ele.animeTitle}</h4>
     <p class="card-text">Released Date<br> ${ele.releasedDate}</p>
     
-    <a href="${ele.episodeUrl}">
+    <a href="${ele.animeUrl}">
     </div>`)
     : ele.hasOwnProperty("latestEp")
     ? //-------------------------------------------Recent Page--------------------------------------
@@ -197,7 +197,7 @@ function createCard(ele) {
     <h4 class="card-title f-0-8rem">${ele.animeTitle}</h4>
     <p class="card-text"> ${ele.latestEp}</p>
     
-    <a href="${ele.episodeUrl}">
+    <a href="${ele.animUrl}">
     </div>`)
     : ele.hasOwnProperty("status")
     ? //-------------------------------------------Search Page-------------------------------------
@@ -205,7 +205,7 @@ function createCard(ele) {
     <h4 class="card-title f-0-8rem">${ele.animeTitle}</h4>
     <p class="card-text"> ${ele.status}</p>
     
-    <a href="${ele.episodeUrl}">
+    <a href="${ele.animeUrl}">
     </div>`)
     : console.log("error");
 
