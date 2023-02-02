@@ -197,7 +197,7 @@ function createCard(ele) {
     <h4 class="card-title f-0-8rem">${ele.animeTitle}</h4>
     <p class="card-text"> ${ele.latestEp}</p>
     
-    <a href="${ele.animUrl}">
+    <a href="${ele.animeUrl}">
     </div>`)
     : ele.hasOwnProperty("status")
     ? //-------------------------------------------Search Page-------------------------------------
