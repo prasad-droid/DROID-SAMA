@@ -44,14 +44,14 @@ async function homepage() {
   {home.innerHTML = "";
   reset();
   let response = await fetch(
-    `https://gogoanime.consumet.org/recent-release?type=1&page=` + pageNo
+    `https://gogoanime.consumet.stream/recent-release?type=1&page=` + pageNo
   );
 
   data = await response.json();
   data.forEach((ele) => {
     createCard(ele);
   });
-  currentLink = `https://gogoanime.consumet.org/recent-release?type=1&page=`;}
+  currentLink = `https://gogoanime.consumet.stream/recent-release?type=1&page=`;}
   catch {
     home.innerHTML=_404()
   }
@@ -62,14 +62,14 @@ async function popularpage() {
  try{ reset();
   home.innerHTML = "";
   let response = await fetch(
-    "https://gogoanime.consumet.org/popular?type=1&page=" + pageNo
+    "https://gogoanime.consumet.stream/popular?type=1&page=" + pageNo
   );
 
   data = await response.json();
   data.forEach((ele) => {
     createCard(ele);
   });
-  currentLink = `https://gogoanime.consumet.org/popular?type=1&page=`;}
+  currentLink = `https://gogoanime.consumet.stream/popular?type=1&page=`;}
   catch{
     home.innerHTML=_404()
   }
@@ -80,14 +80,14 @@ async function moviespage() {
   reset();
   home.innerHTML = "";
   let response = await fetch(
-    "https://gogoanime.consumet.org/anime-movies?page=" + pageNo
+    "https://gogoanime.consumet.stream/anime-movies?page=" + pageNo
   );
 
   data = await response.json();
   data.forEach((ele) => {
     createCard(ele);
   });
-  currentLink = `https://gogoanime.consumet.org/anime-movies?page=`;}
+  currentLink = `https://gogoanime.consumet.stream/anime-movies?page=`;}
   catch{
     home.innerHTML=_404()
   }
@@ -97,14 +97,14 @@ async function recentpage() {
   try {reset();
   home.innerHTML = "";
   let response = await fetch(
-    "https://gogoanime.consumet.org/top-airing?page=" + pageNo
+    "https://gogoanime.consumet.stream/top-airing?page=" + pageNo
   );
 
   data = await response.json();
   data.forEach((ele) => {
     createCard(ele);
   });
-  currentLink = `https://gogoanime.consumet.org/top-airing?page=`;}
+  currentLink = `https://gogoanime.consumet.stream/top-airing?page=`;}
   catch{
     home.innerHTML=_404()
   }
@@ -114,7 +114,7 @@ async function searchpage() {
   try{reset();
   home.innerHTML = "";
   let response = await fetch(
-    `https://gogoanime.consumet.org/search?keyw=${search.value}&page=` + pageNo
+    `https://gogoanime.consumet.stream/search?keyw=${search.value}&page=` + pageNo
   );
 
   data = await response.json();
@@ -140,7 +140,7 @@ $(".category").click(async function (e) {
   reset();
   let genre = e.currentTarget.innerHTML.toLowerCase();
   home.innerHTML = "";
-  let response = await fetch(`https://gogoanime.consumet.org/genre/${genre}`);
+  let response = await fetch(`https://gogoanime.consumet.stream/genre/${genre}`);
 
   data = await response.json();
   data.forEach((ele) => {
