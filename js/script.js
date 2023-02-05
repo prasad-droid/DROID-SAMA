@@ -179,7 +179,7 @@ function createCard(ele) {
   <h4 class="card-title f-0-8rem">${ele.animeTitle}</h4>
   <p class="card-text">Eps. ${ele.episodeNum}</p>
   
-  <a href="${ele.animeUrl}">
+  <a href="${ele.episodeUrl}">
   </div>`)
     : ele.hasOwnProperty("releasedDate")
     ? //----------------------------------------Movies & Popular Page--------------------------------
