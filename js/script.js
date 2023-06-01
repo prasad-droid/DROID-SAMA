@@ -114,7 +114,7 @@ async function searchpage() {
   try{reset();
   home.innerHTML = "";
   let response = await fetch(
-    `https://gogoanime.consumet.stream/search?keyw=${search.value}&page=` + pageNo
+    `https://api.consumet.org/anime/gogoanime/${search.value}&page=` + pageNo
   );
 
   data = await response.json();
