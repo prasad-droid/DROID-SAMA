@@ -172,7 +172,7 @@ function createCard(ele) {
     "text-center"
   );
   card.innerHTML = `
-      <img class="card-img-top img-fit" src="${ele.animeImg}" alt="${ele.animeId}" >
+      <img class="card-img-top img-fit" src="${ele.image}" alt="${ele.animeId}" >
       
                         `;
   ele.hasOwnProperty("episodeNum")
