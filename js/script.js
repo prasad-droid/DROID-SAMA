@@ -49,7 +49,8 @@ async function homepage() {
 
   data = await response.json();
    console.log(data)
-  data.forEach((ele) => {
+   
+  data.results.forEach((ele) => {
     createCard(ele);
   });
   currentLink = `https://gogoanime.consumet.stream/recent-release?type=1&page=`;}
