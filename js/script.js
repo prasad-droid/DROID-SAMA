@@ -48,6 +48,7 @@ async function homepage() {
   );
 
   data = await response.json();
+   console.log(data)
   data.forEach((ele) => {
     createCard(ele);
   });
