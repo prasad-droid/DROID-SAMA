@@ -44,7 +44,7 @@ async function homepage() {
   {home.innerHTML = "";
   reset();
   let response = await fetch(
-    `https://gogoanime.consumet.stream/recent-release
+    `https://gogoanime.consumet.stream/recent-release`
   );
 
   data = await response.json();
