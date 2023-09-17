@@ -6,7 +6,12 @@ export default function Sidebar() {
       <li class="page-item prev"><a class=" no-outline page-link text-dark bg-gold" onclick="changePage(-1)">Previous</a></li>
       <li class"page-item pageNo"><a class=" no-outline page-link text-dark bg-gold pageNo" id="page">1</a> </li>
       <li class="page-item next"><a class=" no-outline page-link text-dark bg-gold" onclick="changePage(1)">Next</a></li>
-      </ul>
+        </nav>
+    `;
+}
+/*
+    
+    </ul>
         <span
           class="nav-link text-dark badge bg-warning category"
           href="javascript:void(0)"
@@ -253,7 +258,4 @@ export default function Sidebar() {
         >
           Thriller
         </span>
-      
-        </nav>
-    `;
-}
+    */
