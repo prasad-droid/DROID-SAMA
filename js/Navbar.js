@@ -28,16 +28,8 @@ export default function Navbar() {
               <a
                 class="nav-link gold"
                 id="popular"
-                onclick="popularpage()"
-                >Popular</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link gold"
-                id="recent"
-                onclick="moviespage()"
-                >Movies</a
+                onclick="topAiring()"
+                >Top-airing</a
               >
             </li>
             <li class="nav-item">
